@@ -1,0 +1,58 @@
+/* Hidden messages section */
+.cgptperf-hidden {
+  display: none !important;
+}
+
+/* Floating Toolbar function (the little thing on the bottom right of your screen */
+.cgptperf-toolbar {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 999999;
+  background: rgba(20, 20, 20, 0.88);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 10px;
+  font: 12px/1.3 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  user-select: none;
+}
+
+.cgptperf-toolbar .row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.cgptperf-toolbar button {
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.cgptperf-toolbar button:hover {
+  background: rgba(255,255,255,0.14);
+}
+
+.cgptperf-toolbar .badge {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.cgptperf-toolbar .link {
+  opacity: 0.9;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cgptperf-toolbar .muted {
+  opacity: 0.8;
+}

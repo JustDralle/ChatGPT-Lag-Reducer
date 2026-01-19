@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Perf Hider",
+  "author" : "Dralle", 
+  "version": "1.0.0",
+  "description": "Cache old message in a discussion to avoid calculating again and again the layout.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://chatgpt.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ChatGPT Perf Hider"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
