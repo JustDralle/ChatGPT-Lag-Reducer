@@ -99,5 +99,5 @@ See the `LICENSE` file for details.
 ## 👤 Author
 
 **Dralle**
-
+Available on discord : justdralle
 Built because browsers should not suffer for our long conversations.
